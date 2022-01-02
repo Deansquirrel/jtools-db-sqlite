@@ -16,7 +16,7 @@ public class SQLiteConnHelper extends ABaseConn {
         super(name);
     }
 
-    public static SQLiteConnHelper builder(@NonNull String name) {
+    public static SQLiteConnHelper builder(String name) {
         return new SQLiteConnHelper(name);
     }
 
@@ -25,7 +25,7 @@ public class SQLiteConnHelper extends ABaseConn {
         return this;
     }
 
-    public SQLiteConnHelper setPath(@NonNull String path) {
+    public SQLiteConnHelper setPath(String path) {
         this.path = path;
         return this;
     }
