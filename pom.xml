@@ -4,8 +4,8 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.github.deansquirrel</groupId>
   <artifactId>tools-db-sqlite</artifactId>
-<!--   <version>0.0.0</version>-->
-  <version>0.0.2</version>
+   <version>0.0.0</version>
+<!--  <version>0.0.2</version>-->
   <name>tools-db-sqlite</name>
   <url>https://github.com/Deansquirrel/jtools-db-sqlite</url>
   <description>tools db mysql</description>
@@ -18,7 +18,7 @@
   <licenses>
     <license>
       <name>The Apache Software License, Version 2.0</name>
-      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
       <distribution>repo</distribution>
     </license>
   </licenses>
