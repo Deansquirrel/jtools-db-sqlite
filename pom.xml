@@ -5,7 +5,7 @@
   <groupId>com.github.deansquirrel</groupId>
   <artifactId>tools-db-sqlite</artifactId>
 <!--   <version>0.0.0</version>-->
-  <version>0.0.3</version>
+  <version>0.0.4</version>
   <name>tools-db-sqlite</name>
   <url>https://github.com/Deansquirrel/jtools-db-sqlite</url>
   <description>tools db mysql</description>

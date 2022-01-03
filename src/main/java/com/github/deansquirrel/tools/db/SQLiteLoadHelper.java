@@ -17,7 +17,7 @@ public class SQLiteLoadHelper {
         this.iToolsDbHelper = iToolsDbHelper;
     }
 
-    public void addMySQLConn(String connName, String dbPath) throws Exception {
+    public void addSQLiteConn(String connName, String dbPath) throws Exception {
         if(connName == null || "".equals(connName) || dbPath == null || "".equals(dbPath)) {
             throw new Exception("连接地址或名称不允许为空");
         }

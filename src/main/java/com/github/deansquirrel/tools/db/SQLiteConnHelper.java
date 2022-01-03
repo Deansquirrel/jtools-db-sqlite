@@ -1,7 +1,6 @@
 package com.github.deansquirrel.tools.db;
 
 import com.alibaba.druid.pool.DruidDataSource;
-import org.springframework.lang.NonNull;
 
 import java.text.MessageFormat;
 
