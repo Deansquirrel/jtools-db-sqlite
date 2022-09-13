@@ -1,5 +1,6 @@
 package com.github.deansquirrel.tools.db;
 
+import com.alibaba.druid.pool.DruidDataSource;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
@@ -18,6 +19,10 @@ public class SQLiteLoadHelper {
     }
 
     public void addSQLiteConn(String connName, String dbPath) throws Exception {
+        iToolsDbHelper.addDataSource(connName, getDataSource(connName, dbPath));
+    }
+
+    public DruidDataSource getDataSource(String connName, String dbPath) throws Exception {
         if(connName == null || "".equals(connName) || dbPath == null || "".equals(dbPath)) {
             throw new Exception("连接地址或名称不允许为空");
         }
@@ -25,6 +30,6 @@ public class SQLiteLoadHelper {
             throw new Exception(MessageFormat.format("连接名称[{0}]已存在", connName));
         }
         SQLiteConnHelper conn = SQLiteConnHelper.builder(connName).setPath(dbPath);
-        iToolsDbHelper.addDataSource(conn.getName(), conn.getDataSource());
+        return conn.getDataSource();
     }
 }
